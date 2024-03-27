@@ -1,0 +1,19 @@
+ - creating a file called testDay00
+ touch testDay00
+
+ - checking the details of the file
+ ls -l
+
+ - the file contains a 40 bytes content, so I filled up with 40 random characters
+ vim testDay00
+
+ - the file has r permissions for the user, rx for the group and rx for the others
+ chmod u=r,g=rx,o=rx testDay00
+
+ - now the file looks like the one presented in the exercise
+ tar -cf testDay00.tar testDay00
+
+ git add .
+ git commit -m "ex00 commited together with its steps"
+ git config --global credential.helper store
+ git push
