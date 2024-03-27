@@ -13,7 +13,14 @@
  - now the file looks like the one presented in the exercise
  tar -cf testDay00.tar testDay00
 
+ - add on github
  git add .
- git commit -m "ex00 commited together with its steps"
+
+ - initial configuration with the provided PAT
  git config --global credential.helper store
+ git config --global user.email andreei.dumitras@gmail.com
+ git config --global user.name andreidumitras
+
+ - commit and push
+ git commit -m "ex00 commited together with its steps"
  git push
