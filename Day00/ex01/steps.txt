@@ -12,6 +12,8 @@
 
  - now the file looks like the one presented in the exercise
  tar -cf testDay00.tar testDay00
+ 	-c = create an archive
+	-f = filename of the archive (testDay00.tar)
 
  - add on github
  git add .
