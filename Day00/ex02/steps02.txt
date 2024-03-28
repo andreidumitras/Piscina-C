@@ -1,0 +1,27 @@
+ - Create directories (mkdir) and files (touch)
+mkdir test0
+touch test1
+mkdir test2
+touch test3
+touch test4
+touch test5
+
+ - Create a link:
+ln -s test0 test6
+	ln = link (like a shortcut in Windows)
+	-s = symbolic link
+
+ - Adjust the file sizes:
+echo "aaa" > test1
+echo "" > test3
+echo "a" > test4
+echo "" > test5
+
+chmod u=rwx,g=x,o=rx test0
+chmod u=rwx,g=x,o=r test1
+chmod u=rx,g=-,o=r test2
+chmod u=r,g=-,o=r test3
+chmod u=rw,g=r,o=x test4
+chmod u=r,g=-,o=r test5
+
+
