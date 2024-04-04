@@ -1,0 +1,8 @@
+ - get kerberos ticket:
+kinit andrei
+
+ - list all kerberos tickets:
+klist
+
+ - save the result into klist.txt
+klist > klist.txt
